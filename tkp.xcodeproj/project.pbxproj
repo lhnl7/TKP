@@ -1,0 +1,149 @@
+
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 52;
+  objects = {
+
+    /* Project root */
+    1F0000010000000000000001 = {
+      isa = PBXProject;
+      attributes = { LastUpgradeCheck = 1500; };
+      buildConfigurationList = 1F0000BC0000000000000001;
+      compatibilityVersion = "Xcode 14.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = ( en );
+      mainGroup = 1F0000020000000000000001;
+      productRefGroup = 1F00000A0000000000000001;
+      targets = ( 1F00000F0000000000000001 );
+    };
+
+    /* Main Group */
+    1F0000020000000000000001 = {
+      isa = PBXGroup;
+      children = (
+        1F00000A0000000000000001,
+        1F0000030000000000000001
+      );
+      sourceTree = "<group>";
+    };
+
+    /* Source Files group */
+    1F0000030000000000000001 = {
+      isa = PBXGroup;
+      children = (
+        1F0000040000000000000001,
+        1F0000050000000000000001,
+        1F0000060000000000000001
+      );
+      path = tkp;
+      sourceTree = "<group>";
+    };
+
+    /* Files */
+    1F0000040000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tkpApp.swift; sourceTree = "<group>"; };
+    1F0000050000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+    1F0000060000000000000001 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+    /* Products */
+    1F00000A0000000000000001 = {
+      isa = PBXGroup;
+      children = ( 1F00000B0000000000000001 );
+      name = Products;
+      sourceTree = "<group>";
+    };
+    1F00000B0000000000000001 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = tkp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+
+    /* Build phases */
+    1F00000C0000000000000001 = {
+      isa = PBXSourcesBuildPhase;
+      files = (
+        1F0000100000000000000001,
+        1F0000110000000000000001
+      );
+    };
+
+    1F00000D0000000000000001 = { isa = PBXFrameworksBuildPhase; files = (); };
+
+    1F00000E0000000000000001 = {
+      isa = PBXResourcesBuildPhase;
+      files = ();
+    };
+
+    /* Target */
+    1F00000F0000000000000001 = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1F0000BD0000000000000001;
+      buildPhases = (
+        1F00000C0000000000000001,
+        1F00000D0000000000000001,
+        1F00000E0000000000000001
+      );
+      buildRules = ();
+      dependencies = ();
+      name = tkp;
+      productName = tkp;
+      productReference = 1F00000B0000000000000001;
+      productType = "com.apple.product-type.application";
+    };
+
+    /* Mapping files to compile */
+    1F0000100000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000040000000000000001; };
+    1F0000110000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000050000000000000001; };
+
+    /* Build configuration (Debug/Release) */
+    1F0000BC0000000000000001 = {
+      isa = XCConfigurationList;
+      buildConfigurations = ( 1F0000BE0000000000000001, 1F0000BF0000000000000001 );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+
+    1F0000BD0000000000000001 = {
+      isa = XCConfigurationList;
+      buildConfigurations = ( 1F0000C0000000000000001, 1F0000C10000000000000001 );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+
+    /* Project level configs */
+    1F0000BE0000000000000001 = {
+      isa = XCBuildConfiguration;
+      buildSettings = { };
+      name = Debug;
+    };
+    1F0000BF0000000000000001 = {
+      isa = XCBuildConfiguration;
+      buildSettings = { };
+      name = Release;
+    };
+
+    /* Target configs */
+    1F0000C00000000000000001 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        INFOPLIST_FILE = tkp/Info.plist;
+        PRODUCT_BUNDLE_IDENTIFIER = com.example.tkp;
+        PRODUCT_NAME = tkp;
+        SWIFT_VERSION = 5.0;
+        ENABLE_PREVIEWS = YES;
+      };
+      name = Debug;
+    };
+
+    1F0000C10000000000000001 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        INFOPLIST_FILE = tkp/Info.plist;
+        PRODUCT_BUNDLE_IDENTIFIER = com.example.tkp;
+        PRODUCT_NAME = tkp;
+        SWIFT_VERSION = 5.0;
+        ENABLE_PREVIEWS = YES;
+      };
+      name = Release;
+    };
+
+  };
+  rootObject = 1F0000010000000000000001;
+}
