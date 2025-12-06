@@ -1,158 +1,136 @@
+// !TEMPLATE project.pbxproj for tkp (fixed Info.plist duplication)
+// NOTE: Replace your existing tkp.xcodeproj/project.pbxproj with this
 
 {
-  archiveVersion = 1;
-  classes = {};
-  objectVersion = 52;
-  objects = {
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 55;
+	objects = {
 
-    /* Project root */
-    1F0000010000000000000001 = {
-      isa = PBXProject;
-      attributes = { LastUpgradeCheck = 1500; };
-      buildConfigurationList = 1F0000BC0000000000000001;
-      compatibilityVersion = "Xcode 14.0";
-      developmentRegion = en;
-      hasScannedForEncodings = 0;
-      knownRegions = ( en );
-      mainGroup = 1F0000020000000000000001;
-      productRefGroup = 1F00000A0000000000000001;
-      targets = ( 1F00000F0000000000000001 );
-    };
+/* Begin PBXBuildFile section */
+		1A1A1A001 /* tkpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A1A100 /* tkpApp.swift */; };
+		1A1A1A002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A1A101 /* ContentView.swift */; };
+		1A1A1A003 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A1A102 /* PlayerViewController.swift */; };
+/* End PBXBuildFile section */
 
-    /* Main Group */
-    1F0000020000000000000001 = {
-      isa = PBXGroup;
-      children = (
-        1F00000A0000000000000001,
-        1F0000030000000000000001
-      );
-      sourceTree = "<group>";
-    };
+/* Begin PBXFileReference section */
+		1A1A1A100 /* tkpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tkpApp.swift; sourceTree = "<group>"; };
+		1A1A1A101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A1A1A102 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		1A1A1A103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
-    /* Source Files group */
-    1F0000030000000000000001 = {
-      isa = PBXGroup;
-      children = (
-        1F0000040000000000000001,
-        1F0000050000000000000001,
-        1F0000060000000000000001,
-        1F0000070000000000000001
-      );
-      path = tkp;
-      sourceTree = "<group>";
-    };
+/* Begin PBXGroup section */
+		1A1A1AF00 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				1A1A1AF01 /* tkp */,
+			);
+			sourceTree = "<group>";
+		};
 
-    /* Files */
-    1F0000040000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tkpApp.swift; sourceTree = "<group>"; };
-    1F0000050000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-    1F0000060000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-    1F0000070000000000000001 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1A1AF01 /* tkp */ = {
+			isa = PBXGroup;
+			children = (
+				1A1A1A100 /* tkpApp.swift */,
+				1A1A1A101 /* ContentView.swift */,
+				1A1A1A102 /* PlayerViewController.swift */,
+				1A1A1A103 /* Info.plist */,
+			);
+			path = tkp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
 
-    /* Products */
-    1F00000A0000000000000001 = {
-      isa = PBXGroup;
-      children = ( 1F00000B0000000000000001 );
-      name = Products;
-      sourceTree = "<group>";
-    };
-    1F00000B0000000000000001 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = tkp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* Begin PBXNativeTarget section */
+		1A1A1A200 /* tkp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1A1A300 /* Build configuration list */;
+			buildPhases = (
+				1A1A1A400 /* Sources */,
+				1A1A1A401 /* Frameworks */,
+				1A1A1A402 /* Resources */, // Info.plist NOT included here anymore
+			);
+			buildRules = ();
+			dependencies = ();
+			name = tkp;
+			productName = tkp;
+			productReference = 1A1A1A500 /* tkp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
-    /* Build phases */
-    1F00000C0000000000000001 = {
-      isa = PBXSourcesBuildPhase;
-      files = (
-        1F0000100000000000000001,
-        1F0000110000000000000001,
-        1F0000120000000000000001
-      );
-    };
+/* Begin PBXFileReference section (product) */
+		1A1A1A500 /* tkp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = tkp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End product */
 
-    1F00000D0000000000000001 = { isa = PBXFrameworksBuildPhase; files = (); };
+/* Begin PBXFrameworksBuildPhase section */
+		1A1A1A401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
-    1F00000E0000000000000001 = {
-      isa = PBXResourcesBuildPhase;
-      files = (
-        1F0000130000000000000001
-      );
-    };
+/* Begin PBXSourcesBuildPhase section */
+		1A1A1A400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1A1A001 /* tkpApp.swift in Sources */,
+				1A1A1A002 /* ContentView.swift in Sources */,
+				1A1A1A003 /* PlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
-    /* Target */
-    1F00000F0000000000000001 = {
-      isa = PBXNativeTarget;
-      buildConfigurationList = 1F0000BD0000000000000001;
-      buildPhases = (
-        1F00000C0000000000000001,
-        1F00000D0000000000000001,
-        1F00000E0000000000000001
-      );
-      buildRules = ();
-      dependencies = ();
-      name = tkp;
-      productName = tkp;
-      productReference = 1F00000B0000000000000001;
-      productType = "com.apple.product-type.application";
-    };
+/* Begin PBXResourcesBuildPhase section */
+		1A1A1A402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
-    /* Mapping files to compile */
-    1F0000100000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000040000000000000001; };
-    1F0000110000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000050000000000000001; };
-    1F0000120000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000060000000000000001; };
-    1F0000130000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000070000000000000001; };
+/* Begin XCBuildConfiguration section */
+		1A1A1A301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = tkp;
+				INFOPLIST_FILE = tkp/Info.plist;
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
 
-    /* Build configuration (Debug/Release) */
-    1F0000BC0000000000000001 = {
-      isa = XCConfigurationList;
-      buildConfigurations = ( 1F0000BE0000000000000001, 1F0000BF0000000000000001 );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
+		1A1A1A302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = tkp;
+				INFOPLIST_FILE = tkp/Info.plist;
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
 
-    1F0000BD0000000000000001 = {
-      isa = XCConfigurationList;
-      buildConfigurations = ( 1F0000C0000000000000001, 1F0000C10000000000000001 );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
+/* Begin XCConfigurationList section */
+		1A1A1A300 /* Build configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1A1A301 /* Debug */,
+				1A1A1A302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
 
-    /* Project level configs */
-    1F0000BE0000000000000001 = {
-      isa = XCBuildConfiguration;
-      buildSettings = { };
-      name = Debug;
-    };
-    1F0000BF0000000000000001 = {
-      isa = XCBuildConfiguration;
-      buildSettings = { };
-      name = Release;
-    };
-
-    /* Target configs */
-    1F0000C00000000000000001 = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        INFOPLIST_FILE = tkp/Info.plist;
-        PRODUCT_BUNDLE_IDENTIFIER = com.example.tkp;
-        PRODUCT_NAME = tkp;
-        SWIFT_VERSION = 5.0;
-        ENABLE_PREVIEWS = YES;
-        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-      };
-      name = Debug;
-    };
-
-    1F0000C10000000000000001 = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        INFOPLIST_FILE = tkp/Info.plist;
-        PRODUCT_BUNDLE_IDENTIFIER = com.example.tkp;
-        PRODUCT_NAME = tkp;
-        SWIFT_VERSION = 5.0;
-        ENABLE_PREVIEWS = YES;
-        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-      };
-      name = Release;
-    };
-
-  };
-  rootObject = 1F0000010000000000000001;
+	};
+	rootObject = 1A1A1AF00 /* Project */;
 }
