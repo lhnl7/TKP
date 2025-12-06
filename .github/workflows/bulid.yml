@@ -1,0 +1,20 @@
+
+name: Build IPA
+on: workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build archive
+        run: |
+          xcodebuild -scheme tkp -configuration Release -sdk iphoneos archive -archivePath build/tkp.xcarchive
+      - name: Export IPA
+        run: |
+          xcodebuild -exportArchive -archivePath build/tkp.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath build/output
+      - name: Upload IPA
+        uses: actions/upload-artifact@v3
+        with:
+          name: tkp-ipa
+          path: build/output/*.ipa
