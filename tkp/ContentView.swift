@@ -1,9 +1,9 @@
-
 import SwiftUI
-import AVKit
+import UIKit
 
-struct ContentView: View {
-    var body: some View {
-        Text("TikTok Player App — Placeholder")
+struct ContentView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        return PlayerViewController()
     }
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }

@@ -35,7 +35,8 @@
       children = (
         1F0000040000000000000001,
         1F0000050000000000000001,
-        1F0000060000000000000001
+        1F0000060000000000000001,
+        1F0000070000000000000001
       );
       path = tkp;
       sourceTree = "<group>";
@@ -44,7 +45,8 @@
     /* Files */
     1F0000040000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tkpApp.swift; sourceTree = "<group>"; };
     1F0000050000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-    1F0000060000000000000001 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+    1F0000060000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+    1F0000070000000000000001 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 
     /* Products */
     1F00000A0000000000000001 = {
@@ -60,7 +62,8 @@
       isa = PBXSourcesBuildPhase;
       files = (
         1F0000100000000000000001,
-        1F0000110000000000000001
+        1F0000110000000000000001,
+        1F0000120000000000000001
       );
     };
 
@@ -68,7 +71,9 @@
 
     1F00000E0000000000000001 = {
       isa = PBXResourcesBuildPhase;
-      files = ();
+      files = (
+        1F0000130000000000000001
+      );
     };
 
     /* Target */
@@ -91,6 +96,8 @@
     /* Mapping files to compile */
     1F0000100000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000040000000000000001; };
     1F0000110000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000050000000000000001; };
+    1F0000120000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000060000000000000001; };
+    1F0000130000000000000001 = { isa = PBXBuildFile; fileRef = 1F0000070000000000000001; };
 
     /* Build configuration (Debug/Release) */
     1F0000BC0000000000000001 = {
@@ -128,6 +135,7 @@
         PRODUCT_NAME = tkp;
         SWIFT_VERSION = 5.0;
         ENABLE_PREVIEWS = YES;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
       };
       name = Debug;
     };
@@ -140,6 +148,7 @@
         PRODUCT_NAME = tkp;
         SWIFT_VERSION = 5.0;
         ENABLE_PREVIEWS = YES;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
       };
       name = Release;
     };
