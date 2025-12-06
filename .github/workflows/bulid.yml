@@ -1,4 +1,4 @@
-name: Build IPA (Unsigned)
+name: Build Unsigned IPA
 
 on:
   workflow_dispatch:
@@ -14,33 +14,30 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode.app
 
-      - name: Build Archive (No Signing)
+      - name: Build .app (no signing)
         run: |
           xcodebuild \
             -project tkp.xcodeproj \
             -scheme tkp \
-            -sdk iphoneos \
             -configuration Release \
+            -sdk iphoneos \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            clean archive \
-            -archivePath build/tkp.xcarchive
+            build \
+            -derivedDataPath build
 
-      - name: Export IPA (No Signing)
+      - name: Create Payload folder
         run: |
-          xcodebuild -exportArchive \
-            -archivePath build/tkp.xcarchive \
-            -exportPath build/ipa \
-            -exportOptionsPlist ExportOptions.plist || true
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/tkp.app Payload/
 
-      - name: Zip IPA
+      - name: Create IPA
         run: |
-          cd build/ipa
-          zip -r tkp_unsigned.zip .
+          zip -r tkp_unsigned.ipa Payload
 
-      - name: Upload Unsigned IPA
+      - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
           name: tkp-unsigned-ipa
-          path: build/ipa
+          path: tkp_unsigned.ipa
